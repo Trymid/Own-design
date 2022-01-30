@@ -58,8 +58,8 @@ body {
 }
 
 .icon__bottom-line-header-style {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .icon__social-media-footer-style {
@@ -115,15 +115,15 @@ body {
 
 .icon__bottom-line-header-style_location {
   display: block;
-  background-image: url("../visual-content/icons/");
+  background-image: url("../visual-content/icons/location.png");
 }
 
 .icon__bottom-line-header-style_schedule{
-  background-image: url("../visual-content/icons/rectangle.svg");
+  background-image: url("../visual-content/icons/schedule.png");
 }
 
 .icon__bottom-line-header-style_telephone {
-  background-image: url("../visual-content/icons/rectangle.svg");
+  background-image: url("../visual-content/icons/telephone.png");
 }
 
 .icon__info-card_computer {
@@ -323,7 +323,13 @@ input[type="text"], input[type="email"], input[type="tel"] {
   background-position: center center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-display: grid;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 5rem;
+  row-gap: 2.5rem;
+  justify-items: center;
+  align-items: start;
   /* display: flex;
   flex-direction: column;
   flex-wrap: wrap; */
@@ -339,8 +345,27 @@ display: grid;
   align-items: center;
 }
 
+
+ */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 3.125rem;
+}
+
 .social-media {
-  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.6875rem;
+  border-top: 1px solid white;
+}
+
+.services {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -348,14 +373,9 @@ display: grid;
   align-items: center;
 }
 
-.about {
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-} */
+.services-title {
+  padding-bottom: 3.125rem;
+}
 
 
 
@@ -577,15 +597,6 @@ display: grid;
 .icon__top-line-right-header-style_user_account_link {
   background-image: url("../visual-content/icons/account.png");
 }
-
-
-/* .icon__size-header_clock {
-  background-image: url("../visual-content/icons/rectangle.svg");
-}
-
-.icon__size-header_telephone {
-  list-style-image: url("../visual-content/icons/rectangle.svg");
-} */
 
 .icon__social-media-footer-style_instagram_link {
   background-image: url("../visual-content/icons/instagram.png");
