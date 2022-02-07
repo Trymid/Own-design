@@ -85,11 +85,10 @@ body {
   padding: 1.875% 6.25% 1.875% 6.25%;
 }
 
-.info {
+.header__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 1 auto;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -97,13 +96,22 @@ body {
   column-gap: 0.5rem;
 }
 
-.info__item {
+.info__item_header {
   display: flex;
   flex-direction: row;
-  flex: 0 0 auto;
   justify-content: space-between;
   align-items: center;
   column-gap: 0.5rem;
+}
+
+.info__item_footer {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  justify-content: start;
+  align-items: start;
+  column-gap: 0.5rem;
+  padding-bottom: 0.85rem;
 }
 
 .info:first-child {
@@ -171,6 +179,8 @@ body {
   column-gap: 2em;
   row-gap: 2em;
   background-image: url("../visual-content/background-images/pc-repair.jpg");
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -188,7 +198,6 @@ input[type="text"],
 input[type="email"],
 input[type="tel"] {
   border: 2px solid #ccc;
-  border-radius: 50px;
   font-size: 1rem;
   padding: 12px 60px 12px 15px;
   margin-bottom: 1rem;
@@ -207,7 +216,7 @@ input[type="tel"] {
   resize: none;
   border: 2px solid #ccc;
   border-radius: 30px;
-  width: 17rem;
+  width: 16rem;
   height: 6rem;
   padding: 12px 0 12px 15px;
   font-size: 1rem;
@@ -448,11 +457,11 @@ input[type="tel"] {
   border-top: 1px solid white;
 }
 
-.services {
+.services-component {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -460,9 +469,29 @@ input[type="tel"] {
   padding-bottom: 3.125rem;
 }
 
-.footer__form {
+.legend__footer {
+  font-weight: bold;
+  padding-bottom: 3.125rem;
+}
+
+.email-newletter {
+  margin-top: 1.5rem;
+}
+
+.form-btn {
   display: flex;
-  column-gap: 1rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.border-style {
+  border-radius: 50px;
+}
+
+.email-newletter {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 
@@ -645,11 +674,12 @@ input[type="tel"] {
 }
 
 .btn_style_small_half_square {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+  padding: 40px 54px 5px 0px;
+  margin: 10px 7px 0px 0px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  column-gap: 0;
   background-color: rgb(255, 151, 0);
   background-image: url("../visual-content/icons/arrow-arrow-slider-right.png");
   background-size: 50% auto;

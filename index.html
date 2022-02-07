@@ -73,15 +73,15 @@
 
         <div class="header__bottom-line header__bottom-line_text_style">
             <ul class="header__info info">
-              <li class="info__item"><span class="key-word">Atom Repair</span> Service</li>
+              <li class="info__item_header"><span class="key-word">Atom Repair</span> Service</li>
 
-              <li class="info__item "><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_location"></span>25, Zee Street, TX</li>
+              <li class="info__item_header"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_location"></span>25, Zee Street, TX</li>
 
-              <li class="info__item"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_schedule"></span>Mon-Fri: 10:00 - 19:00;</li>
+              <li class="info__item_header"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_schedule"></span>Mon-Fri: 10:00 - 19:00;</li>
 
-              <li class="info__item"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_schedule"></span>Sat-Sun: 10:00 - 15:00;</li>
+              <li class="info__item_header"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_schedule"></span>Sat-Sun: 10:00 - 15:00;</li>
 
-              <li class="info__item"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_telephone"></span><a class="contact-telephone-number" href="tel:+342231241231">+342-(23)-124-12-31</a></li>
+              <li class="info__item_header"><span class="icon icon__bottom-line-header-style icon__bottom-line-header-style_telephone"></span><a class="contact-telephone-number" href="tel:+342231241231">+342-(23)-124-12-31</a></li>
             </ul>
         </div>
       </div>
@@ -213,19 +213,19 @@
             <legend class="form__legend title text-style-42px font-color-not-black">Get A <span class="key-word">Free</span>  Qoute</legend>
 
             <p>
-              <input class="name" type="text" name="name" id="nameField" pattern="^[A-Za-zА-Яа-я -]{1,80}$" placeholder="Your name" required/>
+              <input class="name border-style" type="text" name="name" id="nameField" pattern="^[A-Za-zА-Яа-я -]{1,80}$" placeholder="Your name" required/>
             </p>
 
             <p>
-              <input type="email" class="email" name="email" id="emailFieldContactForm" placeholder="Enter your email" required/>
+              <input type="email" class="email border-style" name="email" id="emailFieldContactForm" placeholder="Enter your email" required/>
             </p>
 
             <p>
-              <input class="mobile" type="tel" value="+375" name="mobile phone" id="mobilePhoneField" maxlength="13" pattern="^\+375(17|29|25|33|44)[0-9]{7}$" placeholder="Phone number" required/>
+              <input class="mobile border-style" type="tel" value="+375" name="mobile phone" id="mobilePhoneField" maxlength="13" pattern="^\+375(17|29|25|33|44)[0-9]{7}$" placeholder="Phone number" required/>
              </p>
 
              <p>
-              <input class="interest" type="text" name="interest" id="interestOfService" placeholder="Interest of service" required/>
+              <input class="interest border-style" type="text" name="interest" id="interestOfService" placeholder="Interest of service" required/>
              </p>   
             
             <p>
@@ -290,32 +290,33 @@
           <div class="services-component">
             <h3 class="services-title title text-style-24px font-color-white">Services</h3>
               <ul class="services info text-style-16px font-color-white">
-                <li class="info__item "><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Laptop Repair</li>
+                <li class="info__item_footer "><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Laptop Repair</li>
 
-                <li class="info__item"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Smartphones Repair</li>
+                <li class="info__item_footer"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Smartphones Repair</li>
 
-                <li class="info__item"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Tablet Repair</li>
+                <li class="info__item_footer"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Tablet Repair</li>
 
-                <li class="info__item"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>PC Repair</li>
+                <li class="info__item_footer"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>PC Repair</li>
 
-                <li class="info__item"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Recover Data</li>
+                <li class="info__item_footer"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Recover Data</li>
 
-                <li class="info__item"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Backup data</li>
+                <li class="info__item_footer"><span class="icon icon_services_footer_style icon__service-info-footer_icon"></span>Backup data</li>
               </ul>
           </div>
           
           <form class="footer__form form newsletter" autocomplete="on">
-            <fieldset class="form__fieldset">
-              <legend class="legend title text-style-24px font-color-white">Newsletter</legend>
+            <fieldset class="form__fieldset form__fieldset_footer">
+              <legend class="legend legend__footer title text-style-24px font-color-white">Newsletter</legend>
               
               <p>
                 <label class="label-newsletter title text-style-16px font-color-white" for="emailFieldNewsletter">Signup for regular newsletter  and stay up to date with our latest news</label>
-                <input type="email" class="email-newletter" name="email-address" id="emailFieldNewsletter" placeholder="Your email address"/>
+                <br />
+                <span class="form-btn">
+                  <input type="email" class="border-style email-newletter" name="email-address" id="emailFieldNewsletter" placeholder="Your email address"/>
+
+                  <button class="btn-newsletter btn_style_small_half_square" type="submit"></button>
+                </span>
               </p>
-
-              
-
-              <button class="btn-newsletter btn_style_small_half_square" type="submit"></button>
             </fieldset>
           </form>
         </div>
