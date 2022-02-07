@@ -10,20 +10,97 @@
 }
 
 
-/* ==== 480 px ===================================================================== */
 
-@media (max-width: 480px) {
-    
 
+
+/* ==== 1244 px ===================================================================== */
+
+@media (max-width: 1244px) {
+    .menu__link_header_btn_style {
+        padding: 0 0.8rem;
+    }
+
+    .menu__gap_top_line {
+        column-gap: 0;
+    }
+
+    .search-position {
+        flex: 1 0 220px;
+        order: 1;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+
+    .presentation__title {
+        font-size: 3.75rem;
+    }
+
+    .presentation__text {
+        font-size: 1.2rem;
+    }
+
+    .icon__bottom-line-header-style {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
-
-
 
 
 /* ==== 768 px ===================================================================== */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .presentation__title {
+        font-size: 2rem;
+        
+    }
+
+    .presentation__text {
+        font-size: 1rem;
+        color: rgb(183, 255, 231);
+    }
+
+    .btn_style_general {
+        padding: 1rem 1.5rem;
+    }
+
+    .about {
+        justify-content: center;
+    }
+
+    .article_about {
+        text-align: center;
+    }
+
+    .legend__footer {
+        text-align: center;;
+    }
+
+    .form-btn {
+        justify-content: center;
+    }
+
+    .process-card__number {
+        font-size: 3rem;
+    }
+
     
+}
+
+
+/* ==== 480 px ===================================================================== */
+
+@media (max-width: 480px) {
+    .header__center {
+        display: none;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"] {
+        padding-right: 10px;
+    }
 
 }
 
@@ -36,16 +113,15 @@
 } */
 
 
-/* ==== 1244 px ===================================================================== */
 
-@media (min-width: 1244px) {
-  
-}
  
 
 /* ==== 1440 px ===================================================================== */
 
 @media (max-width: 1440px) {
-  
+    .header__info {
+        justify-content: center;
+        column-gap: 2.5rem;
+    }
 }
 

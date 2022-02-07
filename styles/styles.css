@@ -24,7 +24,7 @@ body {
 .header__container {
   max-width: 1920px;
   font-size: 1.25rem;
-  /* 20px */
+  
 }
 
 .header__top-line {
@@ -200,7 +200,6 @@ input[type="tel"] {
   border: 2px solid #ccc;
   font-size: 1rem;
   padding: 12px 60px 12px 15px;
-  margin-bottom: 1rem;
 }
 
 .quote-image {
@@ -344,8 +343,15 @@ input[type="tel"] {
 .main__processing {
   margin: 6.77% 0 6.77% 0;
   padding: 6.77% 8.8541% 6.77% 8.8541%;
-  background-color: rgb(52, 52, 52);
+  /* background-color: rgb(52, 52, 52); */
   text-align: center;
+  /* background-image: url("../visual-content/background-images/processing_1.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .process-cards {
@@ -434,7 +440,12 @@ input[type="tel"] {
 
 .form__fieldset {
   border: 0 none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 
@@ -487,6 +498,10 @@ input[type="tel"] {
 
 .border-style {
   border-radius: 50px;
+}
+
+.margin {
+  margin-bottom: 1rem;
 }
 
 .email-newletter {
@@ -573,7 +588,6 @@ input[type="tel"] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 1 auto;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -676,8 +690,8 @@ input[type="tel"] {
 .btn_style_small_half_square {
   width: 40px;
   height: 40px;
-  padding: 40px 54px 5px 0px;
-  margin: 10px 7px 0px 0px;
+  padding: 41px 54px 5px 0px;
+  margin: 25px 7px 0px 0px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   background-color: rgb(255, 151, 0);
